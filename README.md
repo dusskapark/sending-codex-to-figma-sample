@@ -35,29 +35,29 @@ skills/.curated/sending-codex-to-figma-sample
 
 ## Skill Installer Usage (openai/skills)
 
+Use `skill-installer` directly in Codex chat (no project Python dependency).
+
 List curated skills from `openai/skills`:
 
-```bash
-python3 ~/.codex/skills/.system/skill-installer/scripts/list-skills.py
+```text
+Use skill-installer to list curated skills from openai/skills.
 ```
 
 Install one curated skill from `openai/skills`:
 
-```bash
-python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
-  --repo openai/skills \
-  --path skills/.curated/<skill-name>
+```text
+Use skill-installer to install <skill-name> from openai/skills (path: skills/.curated/<skill-name>).
 ```
 
 Install from a GitHub URL path:
 
-```bash
-python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
-  --url https://github.com/openai/skills/tree/main/skills/.curated/<skill-name>
+```text
+Use skill-installer to install from:
+https://github.com/openai/skills/tree/main/skills/.curated/<skill-name>
 ```
 
 ## Manual (Short)
 
-1. `list-skills.py`로 목록 확인
-2. `install-skill-from-github.py`로 설치
+1. Codex 채팅에서 `skill-installer` 호출
+2. `openai/skills` 기준으로 원하는 스킬 설치 요청
 3. Codex 재시작
